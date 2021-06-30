@@ -1,0 +1,1 @@
+# jekyll-open-hours-template
