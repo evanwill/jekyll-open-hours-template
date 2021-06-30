@@ -1,0 +1,79 @@
+######
+#
+# Default open hours (required)
+# must include display messages for mon,tue,wed,thu,fri,sat,sun 
+#
+######
+default_hours: 
+  name: "Semester Hours"
+  mon: "Open 6am &#8211; 2am"
+  tue: "Open 6am &#8211; 2am"
+  wed: "Open 6am &#8211; 2am"
+  thu: "Open 6am &#8211; 2am"
+  fri: "Open 6am &#8211; 2am"
+  sat: "Open 12pm &#8211; 6pm"
+  sun: "Open 12pm &#8211; 2am"
+
+######
+#
+# Breaks open hours (optional, longer term hours that apply to extended periods)
+# each break is one list item,
+# must include values for start and end (iso date format),
+# and display messages mon,tue,wed,thu,fri,sat,sun
+#
+######
+breaks:
+  - name: "Winter Break"
+    start: "2020-12-19"
+    end: "2020-12-23"
+    mon: "Open 8am &#8211; 6pm"
+    tue: "Open 8am &#8211; 6pm"
+    wed: "Open 8am &#8211; 6pm"
+    thu: "Open 8am &#8211; 6pm"
+    fri: "Open 8am &#8211; 6pm"
+    sat: "Closed"
+    sun: "Open 12pm &#8211; 6pm"
+  - name: "Summer Hours"
+    start: "2021-05-16"
+    end: "2021-08-22"
+    mon: "Open 8am &#8211; 8pm"
+    tue: "Open 8am &#8211; 8pm"
+    wed: "Open 8am &#8211; 8pm"
+    thu: "Open 8am &#8211; 8pm"
+    fri: "Open 8am &#8211; 8pm"
+    sat: "Closed"
+    sun: "Open 12pm &#8211; 8pm"     
+
+######
+#
+# Exception dates (optional, hours that apply to single dates)
+# each specials is a list item, 
+# must include a list of dates (iso date format),
+# plus a display message
+# 
+######
+exceptions:
+  - name: "Winter Closures"
+    dates: ["2021-07-04", "2021-12-31", "2022-01-01"]
+    message: "Closed"  
+  - name: "Summer Closures"
+    dates: ["2021-07-04", "2021-07-05"]
+    message: "Closed"  
+
+######
+#
+# Day names (the name for days for hours page display)
+# must include values for mon,tue,wed,thu,fri,sat,sun 
+# only change if your need non-default day names e.g. to change language
+# the values mon,tue,wed,thu,fri,sat,sun are still used in config_hours
+# but allows display name to be customized
+#
+######
+day_names:
+  mon: "Monday"
+  tue: "Tuesday"
+  wed: "Wednesday"
+  thu: "Thursday"
+  fri: "Friday"
+  sat: "Saturday"
+  sun: "Sunday"

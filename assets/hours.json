@@ -1,0 +1,5 @@
+---
+# generate hours json from _data/config_hours.yml 
+---
+
+{{ site.data.config_hours | jsonify }}

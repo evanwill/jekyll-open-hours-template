@@ -1,0 +1,15 @@
+######
+#
+# Jekyll Hours Template
+# https://github.com/evanwill/jekyll-open-hours-template
+#
+######
+
+# Site settings
+title: Jekyll Hours Template 
+description: "A basic template for creating a hours page and info for a Jekyll site" 
+author: evanwill
+
+# url variables
+url:
+baseurl: 
